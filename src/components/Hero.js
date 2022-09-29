@@ -1,10 +1,9 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
 import mascot from '../images/ribbit-logo.png'
 import background from '../images/line-background.jpg'
+import Image from 'mui-image'
 
 export default function Hero() {
 
@@ -21,19 +20,10 @@ export default function Hero() {
         }}
       >
         <Container maxWidth="sm">
-          <img src={mascot} alt="Mascot" width="500" height="600" />
+          <Image src={mascot} alt="Mascot" width="500" height="600" />
           <Typography variant="h5" align="center" color="white" paragraph>
           A new digital text messaging mode for VHF/UHF emergency communications
           </Typography>
-          <Stack
-            sx={{ pt: 4 }}
-            direction="row"
-            spacing={2}
-            justifyContent="center"
-          >
-            <Button variant="contained">Main call to action</Button>
-            <Button variant="outlined">Secondary action</Button>
-          </Stack>
         </Container>
       </Box>
     )
