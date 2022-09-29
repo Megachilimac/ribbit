@@ -19,6 +19,7 @@ function Item(props) {
         borderRadius: 2,
         fontSize: "0.875rem",
         fontWeight: "700",
+        minHeight: "12vw",
         ...sx,
       }}
       {...other}
@@ -52,30 +53,54 @@ export default function About() {
         What Is Ribbit?
       </Typography>
       <Grid container spacing={3} alignItems="center" justifyContent="center">
-        <Grid item xs="12" sm="6" md="2">
+        <Grid item xs="12" sm="6" md="3">
           <Item>
-            Ribbit is a novel digital text messaging mode for VHF/UHF
-            communications for recreational and emergency use which radically
-            increases the density of information transmitted by spectrum used.
+            <Typography
+              textAlign={"center"}
+              fontSize={"0.875rem"}
+              fontWeight={"700"}
+            >
+              Ribbit is a novel digital text messaging mode for VHF/UHF
+              communications for recreational and emergency use which radically
+              increases the density of information transmitted by spectrum used.
+            </Typography>
           </Item>
         </Grid>
-        <Grid item xs="12" sm="6" md="2">
+        <Grid item xs="12" sm="6" md="3">
           <Item>
-            It leverages the computing power of the modern smartphone to
-            increase the capabilities of any Handy Talkie without requiring any
-            additional hardware.
+            <Typography
+              textAlign={"center"}
+              fontSize={"0.875rem"}
+              fontWeight={"700"}
+            >
+              It leverages the computing power of the modern smartphone to
+              increase the capabilities of any Handy Talkie without requiring
+              any additional hardware.
+            </Typography>
           </Item>
         </Grid>
-        <Grid item xs="12" sm="6" md="2">
+        <Grid item xs="12" sm="6" md="3">
           <Item>
-            Its redundant distributed nature allows it to function even when
-            internet connectivity is lost during emergencies.
+            <Typography
+              textAlign={"center"}
+              fontSize={"0.875rem"}
+              fontWeight={"700"}
+            >
+              Its redundant distributed nature allows it to function even when
+              internet connectivity is lost during emergencies.
+            </Typography>
           </Item>
         </Grid>
-        <Grid item xs="12" sm="6" md="2">
+        <Grid item xs="12" sm="6" md="3">
           <Item>
-            Ribbit is open source and currently in its early stages of
-            development.
+            <Typography
+              textAlign={"center"}
+              fontSize={"0.875rem"}
+              fontWeight={"700"}
+            >
+              Ribbit is open source and currently in its early stages of
+              development.
+            </Typography>
           </Item>
         </Grid>
       </Grid>
