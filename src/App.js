@@ -3,20 +3,23 @@ import AppBar from '@mui/material/AppBar';
 import CssBaseline from '@mui/material/CssBaseline';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
+import { MenuItem, Typography } from '@mui/material';
 import Hero from './components/Hero';
 
 const theme = createTheme();
 
 function App() {
+  const section = ['About Ribbit', 'Benefits', 'Contact Us']
   return (
     <ThemeProvider theme={theme}>
     <CssBaseline />
-    <AppBar position="relative">
+    <AppBar position="relative" sx={{ bgcolor: "#010638" }}>
       <Toolbar>
-        <Typography variant="h6" color="inherit" noWrap>
-          Album layout
-        </Typography>
+      {section.map((page) => (
+                <MenuItem key={page}>
+                  <Typography textAlign="center">{page}</Typography>
+                </MenuItem>
+              ))}
       </Toolbar>
     </AppBar>
     <main>
