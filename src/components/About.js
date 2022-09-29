@@ -23,7 +23,7 @@ function Item(props) {
         borderRadius: 2,
         fontSize: "0.875rem",
         fontWeight: "700",
-        minHeight: "12vw",
+        minHeight: "10vw",
         ...sx,
       }}
       {...other}
@@ -46,7 +46,7 @@ Item.propTypes = {
 
 export default function About() {
   return (
-    <Box sx={{ bgcolor: "#00276c" }}>
+    <Box sx={{ bgcolor: "#00276c", minHeight: "100vh" }}>
       <Typography
         variant="h3"
         align="center"
@@ -72,6 +72,7 @@ export default function About() {
               textAlign={"center"}
               fontSize={"0.875rem"}
               fontWeight={"700"}
+              marginTop={"20px"}
             >
               Ribbit is a novel digital text messaging mode for VHF/UHF
               communications for recreational and emergency use which radically
@@ -94,6 +95,7 @@ export default function About() {
               textAlign={"center"}
               fontSize={"0.875rem"}
               fontWeight={"700"}
+              marginTop={"20px"}
             >
               It leverages the computing power of the modern smartphone to
               increase the capabilities of any Handy Talkie without requiring
@@ -116,6 +118,7 @@ export default function About() {
               textAlign={"center"}
               fontSize={"0.875rem"}
               fontWeight={"700"}
+              marginTop={"20px"}
             >
               Its redundant distributed nature allows it to function even when
               internet connectivity is lost during emergencies.
@@ -137,6 +140,7 @@ export default function About() {
               textAlign={"center"}
               fontSize={"0.875rem"}
               fontWeight={"700"}
+              marginTop={"20px"}
             >
               Ribbit is open source and currently in its early stages of
               development.
