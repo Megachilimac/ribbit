@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import mascot from '../images/mascot.png'
+import mascot from '../images/ribbit-logo.png'
 import background from '../images/line-background.jpg'
 
 export default function Hero() {
@@ -21,8 +21,8 @@ export default function Hero() {
         }}
       >
         <Container maxWidth="sm">
-          <img src={mascot} alt="Mascot" />
-          <Typography variant="h5" align="center" color="green" paragraph>
+          <img src={mascot} alt="Mascot" width="500" height="600" />
+          <Typography variant="h5" align="center" color="white" paragraph>
           A new digital text messaging mode for VHF/UHF emergency communications
           </Typography>
           <Stack
