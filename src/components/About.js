@@ -1,6 +1,10 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { Grid, Box, Typography } from "@mui/material";
+import { BiMessageAltDetail } from "react-icons/bi";
+import { BsPhoneVibrate } from "react-icons/bs";
+import { FaConnectdevelop } from "react-icons/fa";
+import { GoBeaker } from "react-icons/go";
 
 function Item(props) {
   const { sx, ...other } = props;
@@ -55,6 +59,15 @@ export default function About() {
       <Grid container spacing={3} alignItems="center" justifyContent="center">
         <Grid item xs="12" sm="6" md="3">
           <Item>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                fontSize: "50px",
+              }}
+            >
+              <BiMessageAltDetail />
+            </div>
             <Typography
               textAlign={"center"}
               fontSize={"0.875rem"}
@@ -68,6 +81,15 @@ export default function About() {
         </Grid>
         <Grid item xs="12" sm="6" md="3">
           <Item>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                fontSize: "50px",
+              }}
+            >
+              <BsPhoneVibrate />
+            </div>
             <Typography
               textAlign={"center"}
               fontSize={"0.875rem"}
@@ -81,6 +103,15 @@ export default function About() {
         </Grid>
         <Grid item xs="12" sm="6" md="3">
           <Item>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                fontSize: "50px",
+              }}
+            >
+              <FaConnectdevelop />
+            </div>
             <Typography
               textAlign={"center"}
               fontSize={"0.875rem"}
@@ -93,6 +124,15 @@ export default function About() {
         </Grid>
         <Grid item xs="12" sm="6" md="3">
           <Item>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                fontSize: "50px",
+              }}
+            >
+              <GoBeaker />
+            </div>
             <Typography
               textAlign={"center"}
               fontSize={"0.875rem"}
