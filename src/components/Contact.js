@@ -25,7 +25,7 @@ export default function Contact() {
         }}
       >
         <Grid container alignItems="center" justifyContent="center">
-          <form className="contact-form" onSubmit={(e) => this.formSubmit(e)}>
+          <form className="contact-form" onSubmit={(e) => handleSubmit(e)}>
             <TextField
               id="outlined-basic"
               placeholder="Enter your name"
@@ -53,7 +53,6 @@ export default function Contact() {
               multiline
               rows={4}
               required
-              fullHeight
               type="text"
               sx={{ width: 320, pb: 3 }}
             />
