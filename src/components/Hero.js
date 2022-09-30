@@ -25,16 +25,17 @@ export default function Hero() {
           align="center"
           color="white"
           paragraph
-          sx={{ pt: 10 }}
+          sx={{ pt: 8 }}
         >
           A new digital text messaging mode for VHF/UHF emergency communications
         </Typography>
       </Container>
-      <Box sx={{ textColor: "white" }}>
+      <Box sx={{ display: "flex", alignItems: "end" }}>
         <Link href="https://www.freepik.com/free-vector/digital-glowing-technology-lines-with-metwork-wire-mesh_10701724.htm?query=website%20background%20network&collectionId=309&&position=31&from_view=collections">
-          background image by starline
+          <Typography variant="caption">
+            background image by starline
+          </Typography>
         </Link>
-        on Freepik
       </Box>
     </Box>
   );
