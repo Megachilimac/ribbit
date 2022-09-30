@@ -9,23 +9,34 @@ import About from "./components/About";
 
 const theme = createTheme();
 
+const scrollDown = (ref) => {
+  ref.current?.scrollIntoView({ behavior: "smooth" });
+};
+
 function App() {
-  const section = ["About Ribbit", "Benefits", "Contact Us"];
+  const about = React.useRef(null);
+  const contact = React.useRef(null);
+  const section = [
+    { displayName: "About", sectionRef: about },
+    { displayName: "Contact Us", sectionRef: contact },
+  ];
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <AppBar position="relative" sx={{ bgcolor: "#010638" }}>
         <Toolbar>
           {section.map((page) => (
-            <MenuItem key={page}>
-              <Typography textAlign="center">{page}</Typography>
+            <MenuItem key={page} onClick={() => scrollDown(page.sectionRef)}>
+              <Typography textAlign="center">{page.displayName}</Typography>
             </MenuItem>
           ))}
         </Toolbar>
       </AppBar>
       <main>
         <Hero />
-        <About />
+        <div ref={about}>
+          <About />
+        </div>
       </main>
     </ThemeProvider>
   );
