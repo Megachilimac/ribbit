@@ -63,43 +63,6 @@ export default function Contact() {
           </Button>
         </Grid>
       </Box>
-      {/* <form
-        onSubmit={(e) => handleSubmit(e)}
-        style={{ borderWidth: "2px", borderStyle: "solid" }}
-      >
-        <Grid
-          container
-          id="contact-form"
-          alignItems="center"
-          justifyContent="center"
-          direction="column"
-        >
-          <Grid item xs={12} sm={6} md={6} sx={{ pt: 4 }}>
-            <TextField sx={{ bgcolor: "white" }} id="name" label="Your Name" />
-          </Grid>
-          <Grid item xs={12} sm={6} md={3} sx={{ pt: 4 }}>
-            <TextField
-              sx={{ bgcolor: "white" }}
-              id="email"
-              label="Your email address"
-            />
-          </Grid>
-          <Grid item xs={12} sm={8} md={6} sx={{ pt: 4 }}>
-            <TextField
-              sx={{ bgcolor: "white" }}
-              id="message"
-              label="Your message"
-              multiline
-              minRows={5}
-              maxRows={5}
-            ></TextField>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={6} sx={{ pt: 4 }}>
-            <Button variant="contained">Send Message</Button>
-          </Grid>
-        </Grid>
-      </form> */}
     </Box>
   );
 }
