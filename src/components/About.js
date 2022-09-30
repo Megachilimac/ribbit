@@ -46,7 +46,7 @@ Item.propTypes = {
 
 export default function About() {
   return (
-    <Box sx={{ bgcolor: "#00276c", minHeight: "100vh" }}>
+    <Box sx={{ bgcolor: "#00276c", minHeight: "75vh" }}>
       <Typography
         variant="h3"
         align="center"

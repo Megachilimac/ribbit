@@ -19,8 +19,8 @@ export default function Contact() {
           bgcolor: "white",
           border: "1px solid",
           borderRadius: 2,
-          width: 400,
-          height: 400,
+          display: "flex",
+          maxWidth: 400,
           p: 2,
         }}
       >
@@ -33,10 +33,8 @@ export default function Contact() {
               variant="outlined"
               required
               type="text"
+              sx={{ width: 320, pb: 3 }}
             />
-            <br />
-            <br />
-            <br />
 
             <TextField
               id="outlined-basic"
@@ -45,29 +43,24 @@ export default function Contact() {
               variant="outlined"
               required
               type="email"
+              sx={{ width: 320, pb: 3 }}
             />
-            <br />
-            <br />
-            <br />
             <TextField
               id="standard-multiline-flexible"
               label="Message"
               placeholder="Enter Message"
               variant="outlined"
               multiline
-              maxRows={4}
+              rows={4}
               required
+              fullHeight
               type="text"
+              sx={{ width: 320, pb: 3 }}
             />
-            <br />
-            <br />
-            <br />
-            <div className="button--container">
-              <Button type="submit" variant="contained">
-                Submit
-              </Button>
-            </div>
           </form>
+          <Button variant="contained" align="center">
+            Submit
+          </Button>
         </Grid>
       </Box>
       {/* <form
