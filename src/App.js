@@ -6,6 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import { MenuItem, Typography } from "@mui/material";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 const theme = createTheme();
 
@@ -36,6 +37,9 @@ function App() {
         <Hero />
         <div ref={about}>
           <About />
+        </div>
+        <div ref={contact}>
+          <Contact />
         </div>
       </main>
     </ThemeProvider>
