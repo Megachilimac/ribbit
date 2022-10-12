@@ -6,7 +6,7 @@ const scrollDown = (ref) => {
 
 export default function Menu({ menuSections }) {
   return (
-    <AppBar position="relative" sx={{ bgcolor: "#010638" }}>
+    <AppBar position="sticky" sx={{ bgcolor: "#010638" }}>
       <Toolbar>
         {menuSections.map((page) => (
           <MenuItem
