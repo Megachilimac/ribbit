@@ -33,7 +33,15 @@ export default function Contact() {
               variant="outlined"
               required
               type="text"
-              sx={{ width: 320, pb: 3 }}
+              sx={{ width: 350, pb: 3 }}
+            />
+            <TextField
+              id="outlined-basic"
+              placeholder="Enter your callsign"
+              label="Callsign"
+              variant="outlined"
+              type="text"
+              sx={{ width: 350, pb: 3 }}
             />
 
             <TextField
@@ -43,7 +51,7 @@ export default function Contact() {
               variant="outlined"
               required
               type="email"
-              sx={{ width: 320, pb: 3 }}
+              sx={{ width: 350, pb: 3 }}
             />
             <TextField
               id="standard-multiline-flexible"
@@ -54,7 +62,7 @@ export default function Contact() {
               rows={4}
               required
               type="text"
-              sx={{ width: 320, pb: 3 }}
+              sx={{ width: 350, pb: 3 }}
             />
           </form>
           <Button variant="contained" align="center">
