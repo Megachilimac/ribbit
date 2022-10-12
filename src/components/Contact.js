@@ -9,7 +9,7 @@ export default function Contact() {
         align="center"
         color="white"
         paragraph
-        sx={{ pt: 4 }}
+        sx={{ pt: 8 }}
       >
         Contact Us
       </Typography>

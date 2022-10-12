@@ -52,7 +52,7 @@ export default function About() {
         align="center"
         color="white"
         paragraph
-        sx={{ pt: 4 }}
+        sx={{ pt: 8 }}
       >
         What Is Ribbit?
       </Typography>
