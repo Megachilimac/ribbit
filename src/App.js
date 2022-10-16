@@ -6,17 +6,20 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Menu from "./components/Menu";
 import Download from "./components/Download";
+import DevTeam from "./components/DevTeam";
 
 const theme = createTheme();
 
 function App() {
   const home = React.useRef(null);
   const about = React.useRef(null);
+  const devteam = React.useRef(null);
   const download = React.useRef(null);
   const contact = React.useRef(null);
   const sections = [
     { displayName: "Home", sectionRef: home },
     { displayName: "About", sectionRef: about },
+    { displayName: "DevTeam", sectionRef: devteam },
     { displayName: "Download", sectionRef: download },
     { displayName: "Contact Us", sectionRef: contact },
   ];
@@ -30,6 +33,9 @@ function App() {
         </div>
         <div ref={about}>
           <About />
+        </div>
+        <div ref={devteam}>
+          <DevTeam />
         </div>
         <div ref={download}>
           <Download />
