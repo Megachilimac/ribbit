@@ -4,7 +4,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Menu from "./components/Menu";
+import AppMenu from "./components/Menu";
 import Download from "./components/Download";
 import DevTeam from "./components/DevTeam";
 
@@ -30,7 +30,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Menu menuSections={sections} />
+      <AppMenu menuSections={sections} />
       <main>
         <div ref={home}>
           <Hero />
