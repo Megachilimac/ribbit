@@ -8,7 +8,11 @@ import Menu from "./components/Menu";
 import Download from "./components/Download";
 import DevTeam from "./components/DevTeam";
 
-const theme = createTheme();
+const theme = createTheme({
+  background: {
+    default: "#509512",
+  },
+});
 
 function App() {
   const home = React.useRef(null);

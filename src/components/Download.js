@@ -19,13 +19,15 @@ export default function Download() {
       <div style={{ display: "flex", justifyContent: "center" }}>
         <a href="https://play.google.com/store/apps/details?id=com.aicodix.rattlegram&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
           <img
+            width={"100%"}
+            height={"auto"}
             alt="Get it on Google Play"
             src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
           />
         </a>
       </div>
 
-      <Typography variant="h4" align="center" color="white" paragraph>
+      <Typography variant="h4" align="center" color="white">
         Why is app not called ‘Ribbit’? We reserve the ‘ribbit’ name when the
         app will be ready for general release
       </Typography>

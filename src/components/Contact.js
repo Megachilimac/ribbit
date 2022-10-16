@@ -1,6 +1,12 @@
 import { Box, Button, Grid, Typography, TextField } from "@mui/material";
+import { useState } from "react";
 
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [callsign, setCallsign] = useState("");
+  const [message, setMessage] = useState("");
+
   const handleSubmit = (e) => true;
   return (
     <Box sx={{ bgcolor: "#509512", minHeight: "100vh" }}>
