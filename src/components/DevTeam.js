@@ -1,8 +1,8 @@
-import { Box, Grid, List, ListItemText, Typography } from "@mui/material";
+import { Box, List, ListItemText, Typography } from "@mui/material";
 
 export default function DevTeam() {
   return (
-    <Box sx={{ bgcolor: "#00276c", minHeight: "100vh" }}>
+    <Box sx={{ bgcolor: "#509512", minHeight: "100vh" }}>
       <Typography
         variant="h3"
         align="center"

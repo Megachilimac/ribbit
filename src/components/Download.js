@@ -2,7 +2,7 @@ import { Box, Typography } from "@mui/material";
 
 export default function Download() {
   return (
-    <Box sx={{ bgcolor: "#00276c", minHeight: "100vh" }}>
+    <Box sx={{ bgcolor: "#509512", minHeight: "100vh" }}>
       <Typography
         variant="h3"
         align="center"
