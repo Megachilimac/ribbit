@@ -1,58 +1,12 @@
 import { Box, Button, Grid, Typography, TextField } from "@mui/material";
-import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 
 export default function Contact() {
-  // const [name, setName] = useState("");
-  // const [email, setEmail] = useState("");
-  // const [callsign, setCallsign] = useState("");
-  // const [message, setMessage] = useState("");
-  // const {
-  //   register,
-  //   handleSubmit,
-  //   reset,
-  //   formState: { errors },
-  // } = useForm();
-  // const [disabled, setDisabled] = useState(false);
-
-  // const onSubmit = async (data) => {
-  //   // Destrcture data object
-  //   const { name, email, subject, message } = data;
-  //   try {
-  //     // Disable form while processing submission
-  //     setDisabled(true);
-
-  //     // Define template params
-  //     const templateParams = {
-  //       name,
-  //       email,
-  //       subject,
-  //       message,
-  //     };
-
-  //     // Use emailjs to email contact form data
-  //     // await emailjs.send(
-  //     //   process.env.REACT_APP_SERVICE_ID,
-  //     //   process.env.REACT_APP_TEMPLATE_ID,
-  //     //   templateParams,
-  //     //   process.env.REACT_APP_USER_ID
-  //     // );
-
-  //     // Reset contact form fields after submission
-  //     reset();
-  //     // Display success toast
-  //     // toastifySuccess();
-  //     // Re-enable form submission
-  //     setDisabled(false);
-  //   } catch (e) {
-  //     console.log(e);
-  //   }
-  // };
-
-  const { handleSubmit, control } = useForm();
+  const { handleSubmit, control, reset } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
+    reset();
   };
 
   return (
@@ -94,7 +48,7 @@ export default function Contact() {
                   fieldState: { error },
                 }) => (
                   <TextField
-                    label="First Name"
+                    label="First Name*"
                     variant="filled"
                     value={value}
                     onChange={onChange}
@@ -116,7 +70,7 @@ export default function Contact() {
                   fieldState: { error },
                 }) => (
                   <TextField
-                    label="Last Name"
+                    label="Last Name*"
                     variant="filled"
                     sx={{ width: 350 }}
                     value={value}
@@ -154,7 +108,7 @@ export default function Contact() {
                   fieldState: { error },
                 }) => (
                   <TextField
-                    label="Email"
+                    label="Email*"
                     variant="filled"
                     value={value}
                     sx={{ width: 350 }}
@@ -177,7 +131,7 @@ export default function Contact() {
                   fieldState: { error },
                 }) => (
                   <TextField
-                    label="Message"
+                    label="Message*"
                     variant="filled"
                     multiline
                     rows={4}
@@ -194,6 +148,7 @@ export default function Contact() {
             </Grid>
             <Box textAlign="center">
               <Button
+                type="submit"
                 sx={{ marginTop: "10px" }}
                 variant="contained"
                 color="primary"
