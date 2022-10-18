@@ -1,12 +1,29 @@
 import { Box, Button, Grid, Typography, TextField } from "@mui/material";
 import { useForm, Controller } from "react-hook-form";
+import axios from "axios";
+
+const SEND_URL =
+  "https://t7kelmvyj4.execute-api.us-east-2.amazonaws.com/development/sendMail";
 
 export default function Contact() {
   const { handleSubmit, control, reset } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
-    reset();
+    const formattedData = {
+      replyTo: data.email,
+      firstName: data.firstName,
+      lastName: data.lastName,
+      callSign: data.callSign,
+      messageBody: data.message,
+    };
+    axios.post(SEND_URL, formattedData).then((response) => {
+      console.log(response.data);
+      if (response.data.statusCode === 200) {
+        alert(response.data.body);
+      }
+      reset();
+    });
   };
 
   return (
@@ -84,7 +101,7 @@ export default function Contact() {
             </Grid>
             <Grid item xs={12}>
               <Controller
-                name="callsign"
+                name="callSign"
                 control={control}
                 defaultValue=""
                 render={({ field: { onChange, value } }) => (
