@@ -22,17 +22,17 @@ export default function DevTeam() {
         >
           <ListItemText>
             <Typography variant="h4" color="white">
-              Pierre W4CKX
+              Pierre - W4CKX
             </Typography>
           </ListItemText>
           <ListItemText>
             <Typography variant="h4" color="white">
-              Ahmit
+              Ahmet - Aicodix GmbH
             </Typography>
           </ListItemText>
           <ListItemText>
             <Typography variant="h4" color="white">
-              Jason KE0CCI
+              Jason - KE0CCI
             </Typography>
           </ListItemText>
         </List>
