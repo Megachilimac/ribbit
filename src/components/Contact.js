@@ -18,7 +18,6 @@ export default function Contact() {
   const [enableSend, setEnableSend] = useState(false);
 
   const onChange = (value) => {
-    console.log("Captcha value:", value);
     const postData = {
       captchaResponse: value,
     };
