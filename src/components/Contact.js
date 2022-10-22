@@ -1,13 +1,32 @@
 import { Box, Button, Grid, Typography, TextField } from "@mui/material";
 import { useForm, Controller } from "react-hook-form";
 import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
+import { useState } from "react";
 
 const SEND_URL =
   "https://t7kelmvyj4.execute-api.us-east-2.amazonaws.com/development/sendMail";
 
+const VERIFY_URL =
+  "https://t7kelmvyj4.execute-api.us-east-2.amazonaws.com/development/captchaVerify";
+
+const SITE_KEY = "6LeMIqEiAAAAAHJXWxLBp4ilcqgK8lwprZl5ZlFN";
+
 export default function Contact() {
   const { handleSubmit, control, reset } = useForm();
 
+  const [enableSend, setEnableSend] = useState(false);
+
+  const onChange = (value) => {
+    console.log("Captcha value:", value);
+    const postData = {
+      captchaResponse: value,
+    };
+    axios.post(VERIFY_URL, postData).then((response) => {
+      console.log(response.data);
+      setEnableSend(response.data.body.success);
+    });
+  };
   const onSubmit = (data) => {
     console.log(data);
     const formattedData = {
@@ -163,11 +182,15 @@ export default function Contact() {
                 rules={{ required: "Please enter a message" }}
               />
             </Grid>
+            <Grid item>
+              <ReCAPTCHA sitekey={SITE_KEY} onChange={onChange} />
+            </Grid>
             <Box textAlign="center">
               <Button
                 type="submit"
                 sx={{ marginTop: "10px" }}
                 variant="contained"
+                disabled={!enableSend}
                 color="primary"
               >
                 Send
