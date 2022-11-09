@@ -32,6 +32,11 @@ export default function DevTeam() {
           </ListItemText>
           <ListItemText>
             <Typography variant="h4" color="white">
+              Neil - K2LL
+            </Typography>
+          </ListItemText>
+          <ListItemText>
+            <Typography variant="h4" color="white">
               Jason - KE0CCI
             </Typography>
           </ListItemText>
