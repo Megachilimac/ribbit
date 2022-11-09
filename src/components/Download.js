@@ -28,6 +28,15 @@ export default function Download() {
       </div>
 
       <Typography variant="h4" align="center" color="white">
+        Test your app decoding with this
+      </Typography>
+      <a href="https://www.youtube.com/watch?v=PbRfXTfnlf8">
+        <Typography variant="h4" align="center">
+          YouTube Test Video
+        </Typography>
+      </a>
+      <p />
+      <Typography variant="h4" align="center" color="white">
         Why is app not called ‘Ribbit’? We reserve the ‘ribbit’ name when the
         app will be ready for general release
       </Typography>
