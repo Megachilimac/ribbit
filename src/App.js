@@ -3,10 +3,9 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Contact from "./components/Contact";
 import AppMenu from "./components/Menu";
-import Download from "./components/Download";
 import DevTeam from "./components/DevTeam";
+import GetInvolved from "./components/GetInvolved";
 
 const theme = createTheme({
   background: {
@@ -18,14 +17,12 @@ function App() {
   const home = React.useRef(null);
   const about = React.useRef(null);
   const devteam = React.useRef(null);
-  const download = React.useRef(null);
-  const contact = React.useRef(null);
+  const involved = React.useRef(null);
   const sections = [
     { displayName: "Home", sectionRef: home },
     { displayName: "About", sectionRef: about },
     { displayName: "DevTeam", sectionRef: devteam },
-    { displayName: "Download", sectionRef: download },
-    { displayName: "Contact Us", sectionRef: contact },
+    { displayName: "Get Involved", sectionRef: involved },
   ];
   return (
     <ThemeProvider theme={theme}>
@@ -41,11 +38,8 @@ function App() {
         <div ref={devteam}>
           <DevTeam />
         </div>
-        <div ref={download}>
-          <Download />
-        </div>
-        <div ref={contact}>
-          <Contact />
+        <div ref={involved}>
+          <GetInvolved />
         </div>
       </main>
     </ThemeProvider>
