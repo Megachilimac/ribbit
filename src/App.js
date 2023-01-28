@@ -4,8 +4,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import AppMenu from "./components/Menu";
-import DevTeam from "./components/DevTeam";
 import GetInvolved from "./components/GetInvolved";
+import Learn from "./components/Learn";
 
 const theme = createTheme({
   background: {
@@ -16,12 +16,12 @@ const theme = createTheme({
 function App() {
   const home = React.useRef(null);
   const about = React.useRef(null);
-  const devteam = React.useRef(null);
   const involved = React.useRef(null);
+  const learn = React.useRef(null);
   const sections = [
     { displayName: "Home", sectionRef: home },
     { displayName: "About", sectionRef: about },
-    { displayName: "DevTeam", sectionRef: devteam },
+    { displayName: "Learn", sectionRef: learn },
     { displayName: "Get Involved", sectionRef: involved },
   ];
   return (
@@ -35,8 +35,8 @@ function App() {
         <div ref={about}>
           <About />
         </div>
-        <div ref={devteam}>
-          <DevTeam />
+        <div ref={learn}>
+          <Learn />
         </div>
         <div ref={involved}>
           <GetInvolved />
