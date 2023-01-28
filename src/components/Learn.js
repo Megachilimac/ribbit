@@ -41,7 +41,7 @@ export default function Learn() {
             <ListItemText>
               <Typography variant="h3" color="white">
                 View the
-                <a href="./resources/Ribbit Poster - July 2022.pdf" download>
+                <a href="RibbitPoster-July2022.pdf" download>
                   DEFCON Aug 2022 Poster
                 </a>
               </Typography>
