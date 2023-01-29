@@ -104,6 +104,11 @@ export default function GetInvolved() {
                 </ListItemText>
                 <ListItemText>
                   <Typography>
+                    iOS version is in development - released soon.
+                  </Typography>
+                </ListItemText>
+                <ListItemText>
+                  <Typography>
                     Test your reception with the{" "}
                     <a href="https://youtube.com/shorts/PbRfXTfnlf8">
                       Test Signal
