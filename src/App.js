@@ -6,6 +6,7 @@ import About from "./components/About";
 import AppMenu from "./components/Menu";
 import GetInvolved from "./components/GetInvolved";
 import Learn from "./components/Learn";
+import Support from "./components/Support";
 
 const theme = createTheme({
   background: {
@@ -18,11 +19,13 @@ function App() {
   const about = React.useRef(null);
   const involved = React.useRef(null);
   const learn = React.useRef(null);
+  const support = React.useRef(null);
   const sections = [
     { displayName: "Home", sectionRef: home },
     { displayName: "About", sectionRef: about },
     { displayName: "Learn", sectionRef: learn },
     { displayName: "Get Involved", sectionRef: involved },
+    { displayName: "Support", sectionRef: support },
   ];
   return (
     <ThemeProvider theme={theme}>
@@ -40,6 +43,9 @@ function App() {
         </div>
         <div ref={involved}>
           <GetInvolved />
+        </div>
+        <div ref={support}>
+          <Support />
         </div>
       </main>
     </ThemeProvider>
