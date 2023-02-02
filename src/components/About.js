@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Grid, Box, Typography } from "@mui/material";
 import { BiMessageAltDetail } from "react-icons/bi";
 import { BsPhoneVibrate } from "react-icons/bs";
-import { FaConnectdevelop } from "react-icons/fa";
+import { FaConnectdevelop, FaUsers } from "react-icons/fa";
 import { GoBeaker } from "react-icons/go";
 
 function Item(props) {
@@ -54,9 +54,33 @@ export default function About() {
         paragraph
         sx={{ pt: 8 }}
       >
-        What Is Ribbit?
+        About
       </Typography>
       <Grid container spacing={3} alignItems="center" justifyContent="center">
+        <Grid item xs={12} sm={6} md={3}>
+          <Item>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                fontSize: "50px",
+              }}
+            >
+              <FaUsers />
+            </div>
+            <Typography
+              textAlign={"center"}
+              fontSize={"0.875rem"}
+              fontWeight={"700"}
+              marginTop={"20px"}
+            >
+              Ribbit is a project of the{" "}
+              <a href="https://www.openresearch.institute/about-open-research-institute/">
+                Open Research Institute
+              </a>
+            </Typography>
+          </Item>
+        </Grid>
         <Grid item xs={12} sm={6} md={3}>
           <Item>
             <div
